@@ -1,0 +1,8 @@
+F:\API\PetsShop\PetsShop\wwwroot\Home.js
+F:\API\PetsShop\PetsShop\wwwroot\UserDetails.html
+F:\API\PetsShop\PetsShop\wwwroot\Home.html
+F:\API\PetsShop\PetsShop\wwwroot\UserDetails.js
+wwwroot\Home.html
+wwwroot\Home.js
+wwwroot\UserDetails.html
+wwwroot\UserDetails.js

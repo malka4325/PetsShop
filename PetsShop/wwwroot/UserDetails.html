@@ -1,0 +1,26 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+<body>
+    <h1> שלום <span id="titleName"></span> התחברת בהצלחה </h1>
+    <button onclick="showUpdate()">לעדכון פרטים</button>
+
+    <div id="updateUser" style="visibility:hidden">
+        <label for="userName">שם משתמש</label>
+        <input id="userName" style="margin-bottom:inherit" /><br /><br />
+        <label for="password">סיסמא</label>
+        <input id="password" style="margin-bottom:inherit" /><br /><br />
+        <label for="firstName">שם פרטי</label>
+        <input id="firstName" style="margin-bottom:inherit" /><br /> <br />
+        <label for="lastName">שם משפחה</label>
+        <input id="lastName" style="margin-bottom:inherit" /><br /><br />
+        <button onclick="updateUser()">עדכן</button>
+    </div>
+    <script src="UserDetails.js"></script>
+</body>
+</html>
