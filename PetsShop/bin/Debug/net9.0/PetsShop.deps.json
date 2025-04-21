@@ -8,10 +8,20 @@
     ".NETCoreApp,Version=v9.0": {
       "PetsShop/1.0.0": {
         "dependencies": {
-          "Services": "1.0.0"
+          "Repositories": "1.0.0",
+          "Services": "1.0.0",
+          "zxcvbn-core": "7.0.92"
         },
         "runtime": {
           "PetsShop.dll": {}
+        }
+      },
+      "zxcvbn-core/7.0.92": {
+        "runtime": {
+          "lib/netstandard2.0/zxcvbn-core.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.92.0"
+          }
         }
       },
       "Entities/1.0.0": {
@@ -36,7 +46,8 @@
       "Services/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
-          "Repositories": "1.0.0"
+          "Repositories": "1.0.0",
+          "zxcvbn-core": "7.0.92"
         },
         "runtime": {
           "Services.dll": {
@@ -52,6 +63,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "zxcvbn-core/7.0.92": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3CKGKJe4SnFrks38EuF4iq1DT6IqsyNu/zMQp9GOpaipb7qdZndjjTXQa1/dkNh/OoxD0/aTcIBrRrbD4ALeGQ==",
+      "path": "zxcvbn-core/7.0.92",
+      "hashPath": "zxcvbn-core.7.0.92.nupkg.sha512"
     },
     "Entities/1.0.0": {
       "type": "project",

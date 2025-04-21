@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "zxcvbn-core/7.0.92": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/zxcvbn-core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/zxcvbn-core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -30,7 +43,8 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Entities": "1.0.0",
-          "Repositories": "1.0.0"
+          "Repositories": "1.0.0",
+          "zxcvbn-core": "7.0.92"
         },
         "compile": {
           "bin/placeholder/Services.dll": {}
@@ -42,6 +56,24 @@
     }
   },
   "libraries": {
+    "zxcvbn-core/7.0.92": {
+      "sha512": "3CKGKJe4SnFrks38EuF4iq1DT6IqsyNu/zMQp9GOpaipb7qdZndjjTXQa1/dkNh/OoxD0/aTcIBrRrbD4ALeGQ==",
+      "type": "package",
+      "path": "zxcvbn-core/7.0.92",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net451/zxcvbn-core.dll",
+        "lib/net451/zxcvbn-core.xml",
+        "lib/netstandard1.3/zxcvbn-core.dll",
+        "lib/netstandard1.3/zxcvbn-core.xml",
+        "lib/netstandard2.0/zxcvbn-core.dll",
+        "lib/netstandard2.0/zxcvbn-core.xml",
+        "zxcvbn-core.7.0.92.nupkg.sha512",
+        "zxcvbn-core.nuspec"
+      ]
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
@@ -60,7 +92,9 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Services >= 1.0.0"
+      "Repositories >= 1.0.0",
+      "Services >= 1.0.0",
+      "zxcvbn-core >= 7.0.92"
     ]
   },
   "packageFolders": {
@@ -95,6 +129,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\Repositories\\Repositories.csproj"
+            },
             "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\Services\\Services.csproj": {
               "projectPath": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\Services\\Services.csproj"
             }
@@ -116,6 +153,12 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "zxcvbn-core": {
+            "target": "Package",
+            "version": "[7.0.92, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

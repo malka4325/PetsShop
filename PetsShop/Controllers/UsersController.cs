@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Services;
 using System.Reflection.PortableExecutable;
 using System.Text.Json;
+using Zxcvbn;
+
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -48,7 +50,7 @@ namespace PetsShop.Controllers
         [HttpPost("login")]
          public IActionResult Post([FromBody] UserLogin userLogin)
         {
-
+            
             User user = userService.login(userLogin);
             if (user == null)
                 return Unauthorized();
@@ -57,7 +59,28 @@ namespace PetsShop.Controllers
            
 
         }
-
+        [HttpPost("password")]
+        public IActionResult Post([FromBody]  string pass)
+        {
+            int res = userService.checkPassPower(pass);
+            switch (res)
+            {
+                case 0:
+                    return Forbid("Too weak password");
+                case 1:
+                    return Forbid("Too weak password");
+                case 2:
+                    return Ok("Weak");
+                case 3:
+                    return Ok("good");
+                case 4:
+                    return Ok("strong");
+            }
+            return BadRequest();
+        }
+        
+           
+        
         // PUT api/<UsersController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] User userToUpdate)

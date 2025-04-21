@@ -232,5 +232,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PetsShop.Controllers.UsersController",
+    "Method": "Post",
+    "RelativePath": "api/Users/password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pass",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

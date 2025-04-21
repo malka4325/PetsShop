@@ -104,9 +104,10 @@ C:\Users\m0583\Desktop\API\PetsShop\PetsShop\bin\Debug\net9.0\Services.dll
 C:\Users\m0583\Desktop\API\PetsShop\PetsShop\bin\Debug\net9.0\Services.pdb
 C:\Users\m0583\Desktop\API\PetsShop\PetsShop\bin\Debug\net9.0\Entities.pdb
 C:\Users\m0583\Desktop\API\PetsShop\PetsShop\bin\Debug\net9.0\Repositories.pdb
-C:\Users\m0583\Desktop\API\PetsShop\PetsShop\obj\Debug\net9.0\compressed\5h7exufk2x-zts09elfc5.gz
 C:\Users\m0583\Desktop\API\PetsShop\PetsShop\obj\Debug\net9.0\compressed\zknq5uaixl-xr2l3vxkb5.gz
 C:\Users\m0583\Desktop\API\PetsShop\PetsShop\obj\Debug\net9.0\PetsShop.csproj.Up2Date
-C:\Users\m0583\Desktop\API\PetsShop\PetsShop\obj\Debug\net9.0\compressed\rtd335oeqp-cb4lwhuiu6.gz
-C:\Users\m0583\Desktop\API\PetsShop\PetsShop\obj\Debug\net9.0\compressed\4dl4g6ga0s-fef7oimzmq.gz
-C:\Users\m0583\Desktop\API\PetsShop\PetsShop\obj\Debug\net9.0\compressed\meg7ts9qxj-827wxny2dw.gz
+C:\Users\m0583\Desktop\API\PetsShop\PetsShop\bin\Debug\net9.0\zxcvbn-core.dll
+C:\Users\m0583\Desktop\API\PetsShop\PetsShop\obj\Debug\net9.0\compressed\rtd335oeqp-bahobqat34.gz
+C:\Users\m0583\Desktop\API\PetsShop\PetsShop\obj\Debug\net9.0\compressed\4dl4g6ga0s-vnfo8drfe8.gz
+C:\Users\m0583\Desktop\API\PetsShop\PetsShop\obj\Debug\net9.0\compressed\meg7ts9qxj-dn1h6fbo3f.gz
+C:\Users\m0583\Desktop\API\PetsShop\PetsShop\obj\Debug\net9.0\compressed\5h7exufk2x-7r3oxm9o4n.gz

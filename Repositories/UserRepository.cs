@@ -40,7 +40,7 @@ namespace Repositories
         }
         public User addUser(User user)
         {
-            if (user == null) return null;
+            
             int numberOfUsers = System.IO.File.ReadLines(path).Count();
             user.UserId = numberOfUsers + 1;
             string userJson = JsonSerializer.Serialize(user);

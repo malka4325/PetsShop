@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RhdZyR54C2E=",
+  "dgSpecHash": "I9crgbpppYo=",
   "success": true,
   "projectFilePath": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\Services\\Services.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\m0583\\.nuget\\packages\\zxcvbn-core\\7.0.92\\zxcvbn-core.7.0.92.nupkg.sha512"
+  ],
   "logs": []
 }

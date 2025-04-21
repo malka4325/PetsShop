@@ -1,6 +1,37 @@
 ﻿function showNewUser() {
     document.getElementById("newUser").style.visibility = "visible";
 }
+const checkPassPower = async () => {
+    const password = document.getElementById("password").value;
+    alert(password)
+    try {
+        const response = await fetch('https://localhost:44345/api/users/password', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+
+            body: JSON.stringify(password)
+        });
+
+        if (response.ok) {
+            const level = await response.json();
+            alert(level);
+        }
+        else {
+            if (response.status == 403)
+                alert("Password is too weak, please enter a strong password")
+            else
+                throw new Error('Network response was not ok');
+
+        }
+
+       
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+    }
+
+}
 const register = async () => {
     const userName = document.getElementById("userName");
     const password = document.getElementById("password");
@@ -20,7 +51,6 @@ const register = async () => {
             headers: {
                 'Content-Type': 'application/json'
             },
-
             body: JSON.stringify(newUser)
         });
 
@@ -63,19 +93,19 @@ const login = async () => {
                 window.location.href = 'UserDetails.html'
             }
             else {
-                switch (responsePost.status) {
+                switch (response.status) {
                     case 400:
-                        const badRequestData = await responsePost.json();
+                        const badRequestData = await response.json();
                         alert(`Bad request: ${badRequestData.message || 'Invalid input. Please check your data.'}`);
                         break;
                     case 401:
-                        alert("Unauthorized: Please check your credentials.");
+                        alert("שם משתמש או סיסמא שגויים");
                         break;
                     case 500:
-                        alert("Server error. Please try again later.");
+                        alert("שגיאת שרת, נסה שוב מאוחר יותר");
                         break;
                     default:
-                        alert(`Unexpected error: ${responsePost.status}`);
+                        alert(`Unexpected error: ${response.status}`);
                 }
             }
 
