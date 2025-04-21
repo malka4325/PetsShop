@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Entities;
+using Microsoft.AspNetCore.Mvc;
 using Services;
 using System.Reflection.PortableExecutable;
 using System.Text.Json;
@@ -11,6 +12,7 @@ namespace PetsShop.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
+        private UserService userService = new UserService();
         string path = Path.Combine(Directory.GetCurrentDirectory(), "users.txt");
         // GET: api/<UsersController>
         [HttpGet]
@@ -23,28 +25,22 @@ namespace PetsShop.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            UserService userService = new UserService();
+            
             User user = userService.getUserById(id);
             if(user ==null)
+                return NotFound();
 
-
-                        return Ok(user);//write in c# code
-             
-             return NotFound();//write in c# code
-
-
+            return Ok(user);//write in c# code
+     
         }
 
         // POST api/<UsersController>
         [HttpPost]
         public IActionResult Post([FromBody] User user)
         {
-            int numberOfUsers = System.IO.File.ReadLines(path).Count();
-            user.UserId = numberOfUsers + 1;
-            string userJson = JsonSerializer.Serialize(user);
-            System.IO.File.AppendAllText(path, userJson + Environment.NewLine);
-            return CreatedAtAction(nameof(Get), new { id = user.UserId }, user);
-
+            User userAdd = userService.addUser(user);
+            if (userAdd == null) return BadRequest();
+            return CreatedAtAction(nameof(Get), new { id = userAdd.UserId }, userAdd);
 
         }
 
@@ -52,18 +48,13 @@ namespace PetsShop.Controllers
         [HttpPost("login")]
          public IActionResult Post([FromBody] UserLogin userLogin)
         {
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "users.txt");
-            using (StreamReader reader = System.IO.File.OpenText(path))
-            {
-                string? currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-                    User user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user.UserName == userLogin.UserName && user.Password == userLogin.Password)
-                        return Ok(user);
-                   }
-            }
-            return Unauthorized();
+
+            User user = userService.login(userLogin);
+            if (user == null)
+                return Unauthorized();
+
+            return Ok(user);//write in c# code
+           
 
         }
 
@@ -71,26 +62,8 @@ namespace PetsShop.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] User userToUpdate)
         {
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "users.txt");
-            string textToReplace = string.Empty;
-            using (StreamReader reader = System.IO.File.OpenText(path))
-            {
-                string currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-
-                    User user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user.UserId == id)
-                        textToReplace = currentUserInFile;
-                }
-            }
-
-            if (textToReplace != string.Empty)
-            {
-                string text = System.IO.File.ReadAllText(path);
-                text = text.Replace(textToReplace, JsonSerializer.Serialize(userToUpdate));
-                System.IO.File.WriteAllText(path, text);
-            }
+           
+            userService.updateUser(id, userToUpdate);
 
         }
 

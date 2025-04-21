@@ -146,7 +146,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "PetsShop.User",
+        "Type": "Entities.User",
         "IsRequired": true
       }
     ],
@@ -183,7 +183,7 @@
       },
       {
         "Name": "userToUpdate",
-        "Type": "PetsShop.User",
+        "Type": "Entities.User",
         "IsRequired": true
       }
     ],
@@ -227,7 +227,7 @@
     "Parameters": [
       {
         "Name": "userLogin",
-        "Type": "PetsShop.UserLogin",
+        "Type": "Entities.UserLogin",
         "IsRequired": true
       }
     ],

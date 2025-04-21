@@ -1,19 +1,23 @@
 {
   "Files": [
     {
-      "Id": "F:\\API\\PetsShop\\PetsShop\\wwwroot\\Home.html",
+      "Id": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\PetsShop\\wwwroot\\Home.html",
       "PackagePath": "staticwebassets\\Home.html"
     },
     {
-      "Id": "F:\\API\\PetsShop\\PetsShop\\wwwroot\\Home.js",
+      "Id": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\PetsShop\\wwwroot\\Home.js",
       "PackagePath": "staticwebassets\\Home.js"
     },
     {
-      "Id": "F:\\API\\PetsShop\\PetsShop\\wwwroot\\UserDetails.html",
+      "Id": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\PetsShop\\wwwroot\\Style.css",
+      "PackagePath": "staticwebassets\\Style.css"
+    },
+    {
+      "Id": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\PetsShop\\wwwroot\\UserDetails.html",
       "PackagePath": "staticwebassets\\UserDetails.html"
     },
     {
-      "Id": "F:\\API\\PetsShop\\PetsShop\\wwwroot\\UserDetails.js",
+      "Id": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\PetsShop\\wwwroot\\UserDetails.js",
       "PackagePath": "staticwebassets\\UserDetails.js"
     },
     {

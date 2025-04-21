@@ -10,5 +10,17 @@ namespace Services
         {
             return userRepository.getUserById(id);
         }
+        public User login(UserLogin userLogin)
+        {
+            return userRepository.login(userLogin);
+        }
+        public User addUser(User user)
+        {
+            return userRepository.addUser(user);
+        }
+        public void updateUser(int id,User user)
+        {
+            userRepository.updateUser(id,user);
+        }
     }
 }

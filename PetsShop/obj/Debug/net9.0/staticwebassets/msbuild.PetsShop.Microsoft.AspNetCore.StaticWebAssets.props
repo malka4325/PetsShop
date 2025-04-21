@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>peodkfcy9w</Fingerprint>
-      <Integrity>L9Mz2yuN8fLpGrC4mx1XEFNJvFSei9YTd5Bq24Eq0kM=</Integrity>
+      <Fingerprint>cb4lwhuiu6</Fingerprint>
+      <Integrity>6JI9P/TMwryyUgnUozYKtA2pCQRQSYGO1dhvNfQWwXo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Home.html'))</OriginalItemSpec>
@@ -36,6 +36,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Home.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Style.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>PetsShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PetsShop</BasePath>
+      <RelativePath>Style.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fef7oimzmq</Fingerprint>
+      <Integrity>twkoK7udQx5GBz9+L/OgT4TAHGVPDYzshMcLCUkp5Ak=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Style.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UserDetails.html'))">
       <SourceType>Package</SourceType>
       <SourceId>PetsShop</SourceId>
@@ -48,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>sdf6xerjew</Fingerprint>
-      <Integrity>YLwqjHjSwWRVPk2nQbcAHNirKRrQPVtFB+ebmD2DuIY=</Integrity>
+      <Fingerprint>827wxny2dw</Fingerprint>
+      <Integrity>QPeM/WEzpU+L7x6KJ+MOjQ37cgNZv/f0FZsZRhbWX0g=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UserDetails.html'))</OriginalItemSpec>
@@ -66,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>z5whvq6x9b</Fingerprint>
-      <Integrity>F4TBq86grRZlK2trAWoSyCiQisL/jVsS3pa1jj8wbMs=</Integrity>
+      <Fingerprint>xr2l3vxkb5</Fingerprint>
+      <Integrity>sy/dQHcCCtTmJXW3G7MUuxvoUyMNKQiW8NQPY979Hvk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UserDetails.js'))</OriginalItemSpec>

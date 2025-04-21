@@ -3,29 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-   
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body dir="rtl">
-    <div id="login">
-        <label for="userNameLogin">שם משתמש</label>
-        <input id="userNameLogin" style="margin-bottom:inherit" /><br /><br />
-        <label for="passwordLogin">סיסמא</label>
-        <input id="passwordLogin" style="margin-bottom:inherit" /><br /><br />
-    </div>
-    <button onclick="login()">התחברות</button><br /><br />
+    <div class="container">
 
-    <button onclick="showNewUser()">משתמש חדש</button>
-    <div id="newUser" style="visibility:hidden">
-        <label for="userName">שם משתמש</label>
-        <input id="userName" style="margin-bottom:inherit" /><br /><br />
-        <label for="password">סיסמא</label>
-        <input id="password" style="margin-bottom:inherit" /><br /><br />
-        <label for="firstName">שם פרטי</label>
-        <input id="firstName" style="margin-bottom:inherit" /><br /> <br />
-        <label for="lastName">שם משפחה</label>
-        <input id="lastName" style="margin-bottom:inherit" /><br /><br />
-        <button onclick="register()">הרשם</button>
-    </div>
-    <script src="Home.js"></script>
+        <div id="login">
+            <label for="userNameLogin">שם משתמש</label>
+            <input id="userNameLogin" style="margin-bottom:inherit" /><br /><br />
+            <label for="passwordLogin">סיסמא</label>
+            <input id="passwordLogin" style="margin-bottom:inherit" /><br /><br />
+
+            <button onclick="login()">התחברות</button><br /><br />
+
+            <button onclick="showNewUser()">משתמש חדש</button>
+        </div>
+        <div id="newUser" style="visibility:hidden">
+            <label for="userName">שם משתמש</label>
+            <input id="userName" style="margin-bottom:inherit" /><br /><br />
+            <label for="password">סיסמא</label>
+            <input id="password" style="margin-bottom:inherit" /><br /><br />
+            <label for="firstName">שם פרטי</label>
+            <input id="firstName" style="margin-bottom:inherit" /><br /> <br />
+            <label for="lastName">שם משפחה</label>
+            <input id="lastName" style="margin-bottom:inherit" /><br /><br />
+            <button onclick="register()">הרשם</button>
+        </div>
+    
+        <script src="Home.js"></script>
 </body>
 </html>

@@ -1,4 +1,0 @@
-F:\API\PetsShop\PetsShop\wwwroot\Home.js
-F:\API\PetsShop\PetsShop\wwwroot\UserDetails.html
-F:\API\PetsShop\PetsShop\wwwroot\Home.html
-F:\API\PetsShop\PetsShop\wwwroot\UserDetails.js
