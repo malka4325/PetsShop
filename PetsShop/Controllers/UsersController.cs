@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Services;
 using System.Reflection.PortableExecutable;
 using System.Text.Json;
+using System.Threading.Tasks;
 using Zxcvbn;
 
 
@@ -14,8 +15,13 @@ namespace PetsShop.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private UserService userService = new UserService();
-        string path = Path.Combine(Directory.GetCurrentDirectory(), "users.txt");
+        private readonly IUserService _userService;
+
+        public UsersController(IUserService userService)
+        {
+            _userService = userService;
+        }
+
         // GET: api/<UsersController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -25,33 +31,40 @@ namespace PetsShop.Controllers
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
             
-            User user = userService.getUserById(id);
+            User user = await _userService.getUserById(id);
             if(user ==null)
                 return NotFound();
 
             return Ok(user);//write in c# code
      
         }
-
+        //register
         // POST api/<UsersController>
         [HttpPost]
-        public IActionResult Post([FromBody] User user)
+        public async Task<IActionResult> Post([FromBody] User user)
         {
-            User userAdd = userService.addUser(user);
-            if (userAdd == null) return BadRequest();
+            if (user.Password != null)
+            {
+            int score = _userService.checkPassPower(user.Password);
+                if (score < 2)
+                    return BadRequest("Password is too weak");
+ 
+            User userAdd =await _userService.addUser(user);
+           if (userAdd == null) return BadRequest(); 
             return CreatedAtAction(nameof(Get), new { id = userAdd.UserId }, userAdd);
-
+            }
+            return BadRequest("No password entered.");
         }
 
         //POST api/<UsersController>
         [HttpPost("login")]
-         public IActionResult Post([FromBody] UserLogin userLogin)
+         public async Task<IActionResult> Post([FromBody] UserLogin userLogin)
         {
             
-            User user = userService.login(userLogin);
+            User user =await _userService.login(userLogin);
             if (user == null)
                 return Unauthorized();
 
@@ -62,13 +75,13 @@ namespace PetsShop.Controllers
         [HttpPost("password")]
         public IActionResult Post([FromBody]  string pass)
         {
-            int res = userService.checkPassPower(pass);
+            int res = _userService.checkPassPower(pass);
             switch (res)
             {
                 case 0:
-                    return Forbid("Too weak password");
+                    return Ok("Too weak password");
                 case 1:
-                    return Forbid("Too weak password");
+                    return Ok("Too weak password");
                 case 2:
                     return Ok("Weak");
                 case 3:
@@ -83,11 +96,17 @@ namespace PetsShop.Controllers
         
         // PUT api/<UsersController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] User userToUpdate)
+        public async Task<IActionResult> Put(int id, [FromBody] User userToUpdate)
         {
-           
-            userService.updateUser(id, userToUpdate);
-
+            if (userToUpdate.Password != null)
+            {
+                int score = _userService.checkPassPower(userToUpdate.Password);
+            if (score < 2)
+                return BadRequest("Password is too weak");
+            await _userService.updateUser(id, userToUpdate);
+            return Ok();
+            }
+            return BadRequest("No password entered.");
         }
 
         // DELETE api/<UsersController>/5

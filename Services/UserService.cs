@@ -1,35 +1,43 @@
 ﻿using Entities;
 using Repositories;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Zxcvbn;
 
 namespace Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
-        private UserRepository userRepository = new UserRepository();
-        public User getUserById(int id)
+        private readonly IUserRepository _userRepository ;
+
+        public UserService(IUserRepository userRepository)
         {
-            return userRepository.getUserById(id);
+            _userRepository = userRepository;
         }
-        public User login(UserLogin userLogin)
+
+        public async Task<User> getUserById(int id)
+        {
+            return await _userRepository.getUserById(id);
+        }
+        public async Task<User> login(UserLogin userLogin)
         {
             if (userLogin == null) return null;
-            return userRepository.login(userLogin);
+            return await _userRepository.login(userLogin);
         }
-        public User addUser(User user)
+        public async Task<User> addUser(User user)
         {
             if (user == null) return null;
-            return userRepository.addUser(user);
+
+            return await _userRepository.addUser(user);
         }
-        public void updateUser(int id,User user)
+        public async Task<User> updateUser(int id, User user)
         {
-            if (user == null) return ;
-            userRepository.updateUser(id,user);
+            if (user == null) return null;
+           return await _userRepository.updateUser(id, user);
         }
         public int checkPassPower(string password)
         {
-            if (!string.IsNullOrEmpty(password)) return -1;
+            if (password == null) return -1;
             var result = Zxcvbn.Core.EvaluatePassword(password);
             return result.Score;
         }

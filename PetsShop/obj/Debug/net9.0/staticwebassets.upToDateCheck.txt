@@ -1,10 +1,8 @@
-C:\Users\m0583\Desktop\API\PetsShop\PetsShop\wwwroot\Style.css
-C:\Users\m0583\Desktop\API\PetsShop\PetsShop\wwwroot\Home.js
-C:\Users\m0583\Desktop\API\PetsShop\PetsShop\wwwroot\UserDetails.html
-C:\Users\m0583\Desktop\API\PetsShop\PetsShop\wwwroot\Home.html
-C:\Users\m0583\Desktop\API\PetsShop\PetsShop\wwwroot\UserDetails.js
+M:\API\PetsShop\PetsShop\wwwroot\Home.js
+M:\API\PetsShop\PetsShop\wwwroot\UserDetails.html
+M:\API\PetsShop\PetsShop\wwwroot\Home.html
+M:\API\PetsShop\PetsShop\wwwroot\UserDetails.js
 wwwroot\Home.html
 wwwroot\Home.js
-wwwroot\Style.css
 wwwroot\UserDetails.html
 wwwroot\UserDetails.js

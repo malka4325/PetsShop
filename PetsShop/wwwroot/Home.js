@@ -3,7 +3,6 @@
 }
 const checkPassPower = async () => {
     const password = document.getElementById("password").value;
-    alert(password)
     try {
         const response = await fetch('https://localhost:44345/api/users/password', {
             method: 'POST',
@@ -13,16 +12,14 @@ const checkPassPower = async () => {
 
             body: JSON.stringify(password)
         });
-
+        console.log(response)
         if (response.ok) {
-            const level = await response.json();
+            const level = await response.text();
             alert(level);
         }
         else {
-            if (response.status == 403)
-                alert("Password is too weak, please enter a strong password")
-            else
-                throw new Error('Network response was not ok');
+     
+               alert('Network response was not ok');
 
         }
 
@@ -39,7 +36,7 @@ const register = async () => {
     const lastName = document.getElementById("lastName");
 
     const newUser = {
-        UserName: userName.value,
+        Email : userName.value,
         Password: password.value,
         FirstName: firstName.value,
         LastName: lastName.value,
@@ -54,12 +51,19 @@ const register = async () => {
             body: JSON.stringify(newUser)
         });
 
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
+        if (response.ok)
+        {
+            const user = await response.json();
+            alert('משתמש נוסף בהצלחה!');
         }
+        else
+        {
+            const badRequestData = await response.text();
+            alert(badRequestData);
+        }
+            
 
-        const user = await response.json();
-        alert('משתמש נוסף בהצלחה!');
+        
     } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
     }
@@ -70,7 +74,7 @@ const login = async () => {
 
 
     const userLogin = {
-            UserName: userName.value,
+            Email : userName.value,
             Password: password.value
         };
 
@@ -95,8 +99,8 @@ const login = async () => {
             else {
                 switch (response.status) {
                     case 400:
-                        const badRequestData = await response.json();
-                        alert(`Bad request: ${badRequestData.message || 'Invalid input. Please check your data.'}`);
+                        const badRequestData = await response.text();
+                        alert(`Bad request: ${badRequestData|| 'Invalid input. Please check your data.'}`);
                         break;
                     case 401:
                         alert("שם משתמש או סיסמא שגויים");

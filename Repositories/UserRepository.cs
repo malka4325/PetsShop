@@ -1,74 +1,44 @@
 ﻿using Entities;
+using Microsoft.EntityFrameworkCore;
 using System.IO;
 using System.Text.Json;
 
 namespace Repositories
 {
-    public class UserRepository
+    public class UserRepository : IUserRepository
     {
-        public string path = Path.Combine(Directory.GetCurrentDirectory(), "users.txt");
-        public User getUserById(int id)
-        {
-            using (StreamReader reader = System.IO.File.OpenText(path))
-            {
-                string? currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
+        private readonly PetsShopContext _petsShopContext;
 
-                    User user = JsonSerializer.Deserialize<User>(currentUserInFile);
+        public UserRepository(PetsShopContext petsShopContext)
+        {
+            _petsShopContext = petsShopContext;
+        }
 
-                    if (user.UserId == id)
-                        return user;//write in c# code
-                }
-            }
-           return null;//write in c# code
-        }
-        public User login(UserLogin userLogin)
+        public async Task<User> getUserById(int id)
         {
-           
-            using (StreamReader reader = System.IO.File.OpenText(path))
-            {
-                string? currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-                    User user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user.UserName == userLogin.UserName && user.Password == userLogin.Password)
-                        return user;
-                }
-            }
-            return null;
+            User user = await _petsShopContext.Users.FindAsync(id);
+            return user;
+
         }
-        public User addUser(User user)
+        public async Task<User> login(UserLogin userLogin)
         {
-            
-            int numberOfUsers = System.IO.File.ReadLines(path).Count();
-            user.UserId = numberOfUsers + 1;
-            string userJson = JsonSerializer.Serialize(user);
-            System.IO.File.AppendAllText(path, userJson + Environment.NewLine);
+           User userFound= await _petsShopContext.Users.Where(user=>user.Email==userLogin.Email && user.Password==userLogin.Password).FirstOrDefaultAsync();
+            return userFound;
+        }
+        public async Task<User> addUser(User user)
+        {
+            await _petsShopContext.AddAsync(user);
+            await _petsShopContext.SaveChangesAsync();
             return user;
         }
-        public void updateUser(int id,User userToUpdate)
+        public async Task<User> updateUser(int id, User userToUpdate)
+        
         {
+           
+           _petsShopContext.Users.Update(userToUpdate);
+            await _petsShopContext.SaveChangesAsync();
+            return userToUpdate;
 
-            string textToReplace = string.Empty;
-            using (StreamReader reader = System.IO.File.OpenText(path))
-            {
-                string currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-
-                    User user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user.UserId == id)
-                        textToReplace = currentUserInFile;
-                }
-            }
-
-            if (textToReplace != string.Empty)
-            {
-                string text = System.IO.File.ReadAllText(path);
-                text = text.Replace(textToReplace, JsonSerializer.Serialize(userToUpdate));
-                System.IO.File.WriteAllText(path, text);
-            }
         }
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\Entities\\Entities.csproj": {}
+    "M:\\API\\PetsShop\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\Entities\\Entities.csproj": {
+    "M:\\API\\PetsShop\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\Entities\\Entities.csproj",
+        "projectUniqueName": "M:\\API\\PetsShop\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\m0583\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m0583\\Desktop\\API\\PetsShop\\Entities\\obj\\",
+        "projectPath": "M:\\API\\PetsShop\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\327929782\\.nuget\\packages\\",
+        "outputPath": "M:\\API\\PetsShop\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\m0583\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\327929782\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +50,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -65,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
