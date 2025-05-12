@@ -1,0 +1,378 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "M:\\API\\PetsShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|m:\\api\\petsshop\\petsshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|solutionrelative:petsshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F8437F-3BDB-4114-BB3B-88FA6EC2B8B7}|Services\\Services.csproj|m:\\api\\petsshop\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29F8437F-3BDB-4114-BB3B-88FA6EC2B8B7}|Services\\Services.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F8437F-3BDB-4114-BB3B-88FA6EC2B8B7}|Services\\Services.csproj|m:\\api\\petsshop\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29F8437F-3BDB-4114-BB3B-88FA6EC2B8B7}|Services\\Services.csproj|solutionrelative:services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|m:\\api\\petsshop\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|solutionrelative:repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|m:\\api\\petsshop\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|solutionrelative:repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|m:\\api\\petsshop\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|m:\\api\\petsshop\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|solutionrelative:repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|m:\\api\\petsshop\\petsshop\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|solutionrelative:petsshop\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F8437F-3BDB-4114-BB3B-88FA6EC2B8B7}|Services\\Services.csproj|m:\\api\\petsshop\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29F8437F-3BDB-4114-BB3B-88FA6EC2B8B7}|Services\\Services.csproj|solutionrelative:services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|m:\\api\\petsshop\\petsshop\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|solutionrelative:petsshop\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F8437F-3BDB-4114-BB3B-88FA6EC2B8B7}|Services\\Services.csproj|m:\\api\\petsshop\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29F8437F-3BDB-4114-BB3B-88FA6EC2B8B7}|Services\\Services.csproj|solutionrelative:services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|m:\\api\\petsshop\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|solutionrelative:repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|m:\\api\\petsshop\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A88CEA1-6161-48DD-A6ED-62F80E71B083}|Repositories\\Repositories.csproj|solutionrelative:repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|m:\\api\\petsshop\\petsshop\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|solutionrelative:petsshop\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F8437F-3BDB-4114-BB3B-88FA6EC2B8B7}|Services\\Services.csproj|m:\\api\\petsshop\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29F8437F-3BDB-4114-BB3B-88FA6EC2B8B7}|Services\\Services.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736CBDC7-28C0-40EB-83C1-35180A431FF2}|Entities\\Entities.csproj|m:\\api\\petsshop\\entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{736CBDC7-28C0-40EB-83C1-35180A431FF2}|Entities\\Entities.csproj|solutionrelative:entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|m:\\api\\petsshop\\petsshop\\wwwroot\\userdetails.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|solutionrelative:petsshop\\wwwroot\\userdetails.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736CBDC7-28C0-40EB-83C1-35180A431FF2}|Entities\\Entities.csproj|m:\\api\\petsshop\\entities\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736CBDC7-28C0-40EB-83C1-35180A431FF2}|Entities\\Entities.csproj|solutionrelative:entities\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736CBDC7-28C0-40EB-83C1-35180A431FF2}|Entities\\Entities.csproj|m:\\api\\petsshop\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736CBDC7-28C0-40EB-83C1-35180A431FF2}|Entities\\Entities.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|m:\\api\\petsshop\\petsshop\\wwwroot\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|solutionrelative:petsshop\\wwwroot\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|m:\\api\\petsshop\\petsshop\\wwwroot\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0EACD18-B215-4944-A788-2C30CA7CC19E}|PetsShop\\PetsShop.csproj|solutionrelative:petsshop\\wwwroot\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\PetsShop\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "PetsShop\\Controllers\\UsersController.cs",
+              "ToolTip": "M:\\API\\PetsShop\\PetsShop\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "PetsShop\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:53:39.849Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Home.js",
+              "DocumentMoniker": "M:\\API\\PetsShop\\PetsShop\\wwwroot\\Home.js",
+              "RelativeDocumentMoniker": "PetsShop\\wwwroot\\Home.js",
+              "ToolTip": "M:\\API\\PetsShop\\PetsShop\\wwwroot\\Home.js",
+              "RelativeToolTip": "PetsShop\\wwwroot\\Home.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-11T11:59:27.249Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUserRepository.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T12:49:55.897Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "Services\\CategoryService.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Services\\CategoryService.cs",
+              "RelativeToolTip": "Services\\CategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:46:21.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CategoryRepository.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:14:39.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\PetsShop\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "PetsShop\\Controllers\\CategoriesController.cs",
+              "ToolTip": "M:\\API\\PetsShop\\PetsShop\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "PetsShop\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:57:44.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductService.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Services\\ProductService.cs",
+              "RelativeToolTip": "Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:19:07.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\PetsShop\\Program.cs",
+              "RelativeDocumentMoniker": "PetsShop\\Program.cs",
+              "ToolTip": "M:\\API\\PetsShop\\PetsShop\\Program.cs",
+              "RelativeToolTip": "PetsShop\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T13:26:00.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T12:41:37.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:13:56.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Services\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "Services\\ICategoryService.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Services\\ICategoryService.cs",
+              "RelativeToolTip": "Services\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:02:05.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\PetsShop\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "PetsShop\\Controllers\\ProductsController.cs",
+              "ToolTip": "M:\\API\\PetsShop\\PetsShop\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "PetsShop\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAvwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:24:05.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "Services\\IProductService.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Services\\IProductService.cs",
+              "RelativeToolTip": "Services\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:23:42.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IProductRepository.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:15:52.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:51:55.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Repositories\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ICategoryRepository.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Repositories\\ICategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:45:38.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Entities.csproj",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Entities\\Entities.csproj",
+              "RelativeDocumentMoniker": "Entities\\Entities.csproj",
+              "ToolTip": "M:\\API\\PetsShop\\Entities\\Entities.csproj",
+              "RelativeToolTip": "Entities\\Entities.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-12T14:00:00.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserDetails.html",
+              "DocumentMoniker": "M:\\API\\PetsShop\\PetsShop\\wwwroot\\UserDetails.html",
+              "RelativeDocumentMoniker": "PetsShop\\wwwroot\\UserDetails.html",
+              "ToolTip": "M:\\API\\PetsShop\\PetsShop\\wwwroot\\UserDetails.html",
+              "RelativeToolTip": "PetsShop\\wwwroot\\UserDetails.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-11T18:13:17.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Home.html",
+              "DocumentMoniker": "M:\\API\\PetsShop\\PetsShop\\wwwroot\\Home.html",
+              "RelativeDocumentMoniker": "PetsShop\\wwwroot\\Home.html",
+              "ToolTip": "M:\\API\\PetsShop\\PetsShop\\wwwroot\\Home.html",
+              "RelativeToolTip": "PetsShop\\wwwroot\\Home.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-11T18:12:14.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Entities\\UserLogin.cs",
+              "RelativeDocumentMoniker": "Entities\\UserLogin.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Entities\\UserLogin.cs",
+              "RelativeToolTip": "Entities\\UserLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T18:09:58.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "M:\\API\\PetsShop\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "M:\\API\\PetsShop\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T16:47:11.552Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
